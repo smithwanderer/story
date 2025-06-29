@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Heiress & Her Lying Beast - A Must-Watch Romance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px 0;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(45deg, #2c1810, #8b4513);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            position: relative;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="hearts" patternUnits="userSpaceOnUse" width="20" height="20"><path d="M10,6 C10,3 7,1 4,3 C1,1 -2,3 -2,6 C-2,10 2,14 10,20 C18,14 22,10 22,6 C22,3 19,1 16,3 C13,1 10,3 10,6 Z" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23hearts)"/></svg>') repeat;
+            opacity: 0.1;
+        }
+        
+        .logo-title {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .main-title {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .play-indicator {
+            background: rgba(255, 215, 0, 0.9);
+            color: #8b4513;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .story-hook {
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: #8b4513;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 8px 16px rgba(255, 215, 0, 0.3);
+        }
+        
+        .plot-points {
+            margin-bottom: 30px;
+        }
+        
+        .plot-points h3 {
+            color: #8b4513;
+            margin-bottom: 20px;
+            font-size: 22px;
+            text-align: center;
+        }
+        
+        .highlights {
+            display: grid;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .highlight-item {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #ffd700;
+            transition: transform 0.2s ease;
+        }
+        
+        .highlight-item:hover {
+            transform: translateX(5px);
+        }
+        
+        .highlight-icon {
+            color: #dc3545;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .description {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #8b4513, #2c1810);
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #8b4513;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(255, 215, 0, 0.6);
+        }
+        
+        .cta-text {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px 0;
+            }
+            
+            .email-container {
+                margin: 0 10px;
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .main-title {
+                font-size: 22px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .hero-image {
+                height: 300px;
+            }
+            
+            .story-hook {
+                font-size: 16px;
+                padding: 15px;
+            }
+            
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+            
+            .highlights {
+                gap: 12px;
+            }
+            
+            .highlight-item {
+                padding: 12px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .main-title {
+                font-size: 20px;
+            }
+            
+            .subtitle {
+                font-size: 14px;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+            
+            .cta-section {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-title">
+                <h1 class="main-title">The Heiress & The Deceptive Duke</h1>
+                <p class="subtitle">A Contract Marriage That Will Steal Your Heart</p>
+            </div>
+        </div>
+        
+        <!-- Hero Image -->
+        <div class="hero-image" style="background-image: url('https://i.ibb.co/yFzwynnt/6-27-1-2.jpg&w=1000&q=80');">
+            <!-- MAIN COVER IMAGE: Romantic couple silhouette -->
+            <div class="play-indicator">
+                ▶ 28.3K Views
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Story Hook -->
+            <div class="story-hook">
+                When inheritance meets contract marriage, when cold rumors meet tender truth...
+            </div>
+            
+            <!-- Plot Description -->
+            <div class="description">
+                Vivian, a titled heiress shunned by her family, enters a one-year contract marriage with a man rumored to be cold, crippled, and ugly—all to secure her inheritance. But the man stands revealed as her new "uncle-like" husband Aaron: silent, sincere, handsome, and deeply caring.
+            </div>
+            
+            <!-- Highlights -->
+            <div class="plot-points">
+                <h3>💫 What Makes This Irresistible</h3>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-icon">❤️</span>
+                        <strong>One-night stand sparks the contract</strong> - Fate's encounter begins it all
+                        <img src="https://i.ibb.co/yFzwynnt/6-27-1-2.jpg&w=800&q=80" alt="Romantic encounter scene" style="width: 100%; max-width: 200px; border-radius: 8px; margin-top: 10px;">
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">😲</span>
+                        <strong>"Uncle" twist that flips expectations</strong> - A shocking reveal you won't see coming
+                        <img src="https://i.ibb.co/0Rbx72b7/6-27-1-7.jpg&w=800&q=80" alt="Shocking revelation scene" style="width: 100%; max-width: 200px; border-radius: 8px; margin-top: 10px;">
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🎭</span>
+                        <strong>Pretended disability, authentic reveal</strong> - The truth behind the facade
+                        <img src="https://i.ibb.co/YFHL8csb/6-27-1-1.jpg&w=800&q=80" alt="Character reveal moment" style="width: 100%; max-width: 200px; border-radius: 8px; margin-top: 10px;">
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">⚔️</span>
+                        <strong>Boardroom wars to topple two corrupt families</strong> - Power struggles at their finest
+                        <img src="https://i.ibb.co/mF6RvywC/6-27-1-8.jpg&w=800&q=80" alt="Business confrontation scene" style="width: 100%; max-width: 200px; border-radius: 8px; margin-top: 10px;">
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🔍</span>
+                        <strong>A shared mysterious past keeps you guessing</strong> - Secrets that bind them together
+                        <img src="https://i.ibb.co/Fq7hqJZ2/6-27-1-9.jpg&w=800&q=80" alt="Mysterious past flashback" style="width: 100%; max-width: 200px; border-radius: 8px; margin-top: 10px;">
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">💝</span>
+                        <strong>Fake marriage morphs into real love</strong> - When pretend becomes perfect
+                        <img src="https://i.ibb.co/h1wndZbB/6-27-1-3.jpg&w=800&q=80" alt="True love moment" style="width: 100%; max-width: 200px; border-radius: 8px; margin-top: 10px;">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="description">
+                Aaron isn't flawless—he hid the truth at first—but his vulnerability, his earnest apologies, and his steadfast presence? That's what makes you melt. Meanwhile, Vivian stands her ground—proud, fearless, loving on her terms.
+                <br><br>
+                A rare vertical romance that nails pacing, plot, emotional highs—and doesn't force you to look away. If a swoonworthy, no-compromise romance is what you crave, click to watch—once might not be enough.
+            </div>
+        </div>
+        
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <p class="cta-text">Ready to be captivated by this epic love story?</p>
+            <a href="mailto:m.smith.wanderer@gmail.com?subject=Send me The Heiress & Her Lying Beast Full Series&body=Hi! I'm interested in watching The Heiress & Her Lying Beast. Please send me the full series content. Thank you!" class="cta-button">Reply for Full Series</a>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>Thank you for being part of our drama community | Discover more amazing stories</p>
+            <p style="margin-top: 10px; font-size: 12px;">
+                Questions? Reply to this email | <a href="mailto:your-email@example.com?subject=Unsubscribe Request" style="color: #666;">Unsubscribe</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
